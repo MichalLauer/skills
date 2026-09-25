@@ -8,17 +8,20 @@
     {
       "name": "conventions",
       "source": "./plugins/conventions",
-      "description": "General conventions for data science."
+      "description": "General conventions for data science.",
+      "version": "1.0.0"
     },
     {
       "name": "r",
       "source": "./plugins/r",
-      "description": "R conventions, tools and scripts."
+      "description": "R conventions, tools and scripts.",
+      "version": "1.0.0"
     },
     {
       "name": "python",
       "source": "./plugins/python",
-      "description": "Python conventions, tools and scripts."
+      "description": "Python conventions, tools and scripts.",
+      "version": "1.0.0"
     }
   ]
 }

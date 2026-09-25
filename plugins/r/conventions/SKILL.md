@@ -5,7 +5,7 @@ compatibility: R (>= 4.1)
 ---
 # Long rules
 
-Read these rules only if you need them. Never read them passively or without a purpose.
+Read these rules only if you need them.
 
 - [functions.md](references/functions.md)
 
