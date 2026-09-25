@@ -1,6 +1,6 @@
 ---
 name: conventions
-description: R coding conventions covering safe coding practices, style, and naming rules. Use whenever the user wants to write, edit or check any R code, R script file or R code inside another document.
+description: R coding conventions covering safe coding practices, style, and naming rules. Use whenever the user wants to write, edit or check any R code, R script file or R code inside another document. It should be also invoked if user wants to only format an R script or code.
 compatibility: R (>= 4.1)
 ---
 # Long rules
@@ -77,9 +77,12 @@ df %>%
 ## Rules
 
 - All formatting rules should be defined in `.air.toml` (or `air.toml`) at the project root.
-- Whenever you write or change any R code, format the files with `air` through the check script below.
+- Whenever you write or change any R code, format the files with `air` through the script below.
 - Never call `air` directly.
 
 ```bash
 bash scripts/air-format.sh <file_1.R> <file_2.R>
 ```
+
+- The script checks the environment, then formats the files.
+- It only inspects the project root, so always run it from there.
