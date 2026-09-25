@@ -76,26 +76,10 @@ df %>%
 
 ## Rules
 
-- All formatting rules should be defined in `.air.toml` at the project root.
-- If the project has no `.air.toml`, ask the user whether they want to use the default config:
-  - If no: share a link to [the official configuration guide](https://posit-dev.github.io/air/configuration.html) so they can write their own.
-  - If yes: copy [assets/.air.toml](assets/.air.toml) into the project root using bash.
-
-## CLI formatting
-
-- Whenever you change any R code, use the `air` CLI tool to format it.
+- All formatting rules should be defined in `.air.toml` (or `air.toml`) at the project root.
+- Whenever you write or change any R code, format the files with `air` through the check script below.
+- Never call `air` directly.
 
 ```bash
-# Single file
-air format <file_1.R>
-# Multiple files
-air format <file_1.R> <file_2.R>
+bash scripts/air-format.sh <file_1.R> <file_2.R>
 ```
-
-## Edge case: Air is not available
-
-- Whenever the tool is not available, tell the user.
-- Suggest that they install it using one of the following:
-  - [posit-dev/air](https://github.com/posit-dev/air)
-  - `uv tool install air-formatter`
-- Never run those commands yourself.
