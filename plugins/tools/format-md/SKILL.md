@@ -15,8 +15,7 @@ metadata:
 - Formats `.md` files using `mdformat` and its `mdformat-gfm` (tables) extension.
 - Optionally extracts line-wrap limits from an `air.toml` or `.air.toml` config file if present in the project root.
 
-Invoke the script from the project root directory.
-
 ```bash
-bash scripts/mdformat.sh <file1.md> [file2.md ...]
+# Invoke the script from the project root directory.
+bash <skill_directory>/scripts/mdformat.sh <file1.md> [file2.md ...]
 ```

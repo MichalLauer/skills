@@ -76,8 +76,8 @@ df %>%
 
 ## Rules
 
-- Do not read the target Markdown file(s) before.
-- Do not read the target Markdown file(s) after formatting, unless the user explicitly asks for a summary of the changes.
+- Do not read the target R file(s) before formatting.
+- Do not read the target R file(s) after formatting, unless the user explicitly asks for a summary of the changes.
 
 ## Formatting
 
@@ -86,5 +86,6 @@ df %>%
 - Never call `air` directly.
 
 ```bash
-bash scripts/air-format.sh <file_1.R> <file_2.R>
+# Invoke the script from the project root directory.
+bash <skill_directory>/scripts/air-format.sh <file_1.R> <file_2.R>
 ```
