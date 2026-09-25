@@ -76,13 +76,15 @@ df %>%
 
 ## Rules
 
+- Do not read the target Markdown file(s) before.
+- Do not read the target Markdown file(s) after formatting, unless the user explicitly asks for a summary of the changes.
+
+## Formatting
+
 - All formatting rules should be defined in `.air.toml` (or `air.toml`) at the project root.
-- Whenever you write or change any R code, format the files with `air` through the script below.
+- Whenever you write or change any R code, format the files through the script call below.
 - Never call `air` directly.
 
 ```bash
 bash scripts/air-format.sh <file_1.R> <file_2.R>
 ```
-
-- The script checks the environment, then formats the files.
-- It only inspects the project root, so always run it from there.
