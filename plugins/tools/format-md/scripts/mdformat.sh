@@ -29,11 +29,12 @@ if ! mdformat --help | grep -qi "gfm"; then
   exit 1
 fi
 
+DEFAULT_WRAP=119
+
 if [ -n "$config" ]; then
   echo "Config file: $config"
   has_config=1
 else
-  echo "Warning: Config file (.air.toml or air.toml) not found. Formatting without wrap limits."
   has_config=0
 fi
 
@@ -45,13 +46,19 @@ fi
 
 mdformat_cmd=(mdformat)
 
+WRAP_LIMIT=""
 if [ "$has_config" -eq 1 ]; then
   WRAP_LIMIT=$(grep -Eo '^wrap\s*=\s*[0-9]+' "$config" | grep -Eo '[0-9]+' | head -n 1)
-  if [ -n "$WRAP_LIMIT" ]; then
-    echo "Formatting with wrap limit: $WRAP_LIMIT"
-    mdformat_cmd+=(--wrap "$WRAP_LIMIT")
-  fi
 fi
+
+if [ -n "$WRAP_LIMIT" ]; then
+  echo "Formatting with wrap limit: $WRAP_LIMIT (from $config)"
+else
+  WRAP_LIMIT=$DEFAULT_WRAP
+  echo "No wrap limit found in config; formatting with default wrap limit: $WRAP_LIMIT"
+fi
+
+mdformat_cmd+=(--wrap "$WRAP_LIMIT")
 
 mdformat_output=$("${mdformat_cmd[@]}" "${files[@]}" 2>&1)
 mdformat_status=$?
