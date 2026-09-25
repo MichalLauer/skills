@@ -1,0 +1,19 @@
+{
+  "name": "ml-skills",
+  "owner": {
+    "name": "Michal Lauer",
+    "url": "https://github.com/MichalLauer/skills"
+  },
+  "plugins": [
+    {
+      "name": "conventions",
+      "source": "./plugins/conventions",
+      "description": "Programming and AI conventions."
+    },
+    {
+      "name": "school",
+      "source": "./plugins/school",
+      "description": "Test plugin directory."
+    }
+  ]
+}
