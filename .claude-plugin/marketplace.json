@@ -9,7 +9,7 @@
       "name": "tools",
       "source": "./plugins/tools",
       "description": "General tools for data science.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "name": "r",

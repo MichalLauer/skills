@@ -5,6 +5,10 @@ compatibility: mdformat CLI tool
 metadata:
   last-verified: "2026-09-25"
 ---
+# Rules
+
+- Do not read the target Markdown file(s) before.
+- Do not read the target Markdown file(s) after formatting, unless the user explicitly asks for a summary of the changes.
 
 # Purpose
 
@@ -14,5 +18,5 @@ metadata:
 Invoke the script from the project root directory.
 
 ```bash
-bash scripts/md-format.sh <file1.md> [file2.md ...]
+bash scripts/mdformat.sh <file1.md> [file2.md ...]
 ```
