@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "conventions",
-      "source": "./plugins/conventions",
-      "description": "General conventions for data science.",
+      "name": "tools",
+      "source": "./plugins/tools",
+      "description": "General tools for data science.",
       "version": "1.0.0"
     },
     {
