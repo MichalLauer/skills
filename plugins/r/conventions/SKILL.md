@@ -1,6 +1,6 @@
 ---
-name: r-conventions
-description: R coding conventions covering safe coding practices, style, and naming rules. Use whenever the user writes, edits, reviews, or refactors R code, or asks about R style, naming, or best practices.
+name: conventions
+description: R coding conventions covering safe coding practices, style, and naming rules. Use whenever the user wants to write, edit or check any R code, R script file or R code inside another document.
 compatibility: R (>= 4.1)
 ---
 # Long rules

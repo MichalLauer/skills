@@ -8,12 +8,17 @@
     {
       "name": "conventions",
       "source": "./plugins/conventions",
-      "description": "Programming and AI conventions."
+      "description": "General conventions for data science."
     },
     {
-      "name": "school",
-      "source": "./plugins/school",
-      "description": "Test plugin directory."
+      "name": "r",
+      "source": "./plugins/r",
+      "description": "R conventions, tools and scripts."
+    },
+    {
+      "name": "python",
+      "source": "./plugins/python",
+      "description": "Python conventions, tools and scripts."
     }
   ]
 }
