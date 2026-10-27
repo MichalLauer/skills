@@ -33,3 +33,8 @@
 # Project
 
 <What is this project about?>
+
+## Structure
+
+<https://tree.nathanfriend.com/?s=(%27options!(%27fancy!true~fullPath!false~trailingSlash!true~rootDot!false)~*(%27*%27%27)~version!%271%27)*source!%01*>
+
